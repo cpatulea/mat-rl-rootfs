@@ -1,0 +1,9 @@
+Package: luci-i18n-english
+Version: svn-r10373-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm47xx
+Installed-Size: 526
+Description:  English

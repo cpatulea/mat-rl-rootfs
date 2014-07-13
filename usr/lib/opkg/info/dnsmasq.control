@@ -1,0 +1,10 @@
+Package: dnsmasq
+Version: 2.71-1
+Depends: libc
+Source: package/network/services/dnsmasq
+License: GPLv2
+LicenseFiles: COPYING
+Section: net
+Architecture: brcm47xx
+Installed-Size: 91500
+Description:  It is intended to provide coupled DNS and DHCP service to a LAN.

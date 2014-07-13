@@ -1,0 +1,8 @@
+Package: procps-top
+Version: 3.2.8-1
+Depends: libc, procps
+Source: /mnt/shared/openwrt-packages/utils/procps
+Section: utils
+Architecture: brcm47xx
+Installed-Size: 26355
+Description:  Installs the applet top.

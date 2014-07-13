@@ -1,0 +1,10 @@
+Package: ubusd
+Version: 2014-05-06-9fda19140e65457d967ff6fe424e420f656c06c9
+Depends: libc, libubox
+Source: package/system/ubus
+License: LGPLv2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: brcm47xx
+Installed-Size: 7815
+Description:  OpenWrt RPC daemon

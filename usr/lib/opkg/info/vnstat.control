@@ -1,0 +1,12 @@
+Package: vnstat
+Version: 1.11-4
+Depends: libc
+Source: /mnt/shared/openwrt-packages-next/net/vnstat
+Section: net
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: brcm47xx
+Installed-Size: 57847
+Description:  vnStat is a network traffic monitor for Linux that keeps a log of daily
+ network traffic for the selected interface(s). vnStat isn't a packet
+ sniffer. The traffic information is analyzed from the /proc -filesystem,
+ so vnStat can be used without root permissions.

@@ -1,0 +1,10 @@
+Package: ubox
+Version: 2014-05-28-1c2a9c1cbe9d18bf342edfa617eff319c1d3ce3a
+Depends: libc, libubox, ubusd, ubus, libuci
+Source: package/system/ubox
+License: GPLv2
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: brcm47xx
+Installed-Size: 23273
+Description:  OpenWrt system helper toolbox

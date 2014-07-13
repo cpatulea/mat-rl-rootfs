@@ -1,0 +1,11 @@
+/lib/modules/3.10.36/act_mirred.ko
+/lib/modules/3.10.36/cls_u32.ko
+/lib/modules/3.10.36/sch_hfsc.ko
+/lib/modules/3.10.36/cls_tcindex.ko
+/lib/modules/3.10.36/cls_fw.ko
+/lib/modules/3.10.36/cls_flow.ko
+/etc/modules.d/70-sched-core
+/lib/modules/3.10.36/em_u32.ko
+/lib/modules/3.10.36/cls_route.ko
+/lib/modules/3.10.36/sch_ingress.ko
+/lib/modules/3.10.36/act_skbedit.ko

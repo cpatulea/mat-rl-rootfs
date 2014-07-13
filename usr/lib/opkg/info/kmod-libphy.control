@@ -1,0 +1,10 @@
+Package: kmod-libphy
+Version: 3.10.36-1
+Depends: kernel (=3.10.36-1-112818f7ae05c0db047b10314e0e5b60)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm47xx
+Installed-Size: 105
+Description:  PHY library

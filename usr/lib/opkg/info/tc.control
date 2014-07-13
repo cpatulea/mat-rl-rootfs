@@ -1,0 +1,8 @@
+Package: tc
+Version: 3.11.0-1
+Depends: libc, kmod-sched-core
+Source: package/network/utils/iproute2
+Section: net
+Architecture: brcm47xx
+Installed-Size: 86690
+Description:  Traffic control utility

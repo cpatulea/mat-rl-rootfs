@@ -1,0 +1,10 @@
+Package: screen
+Version: 4.2.1-1
+Depends: libc, libncurses
+Source: /mnt/shared/openwrt-packages-next/utils/screen
+Section: utils
+Maintainer: Etienne CHAMPETIER <etienne.champetier@free.fr>
+Architecture: brcm47xx
+Installed-Size: 167202
+Description:  Screen is a full-screen window manager that multiplexes a physical
+ terminal between several processes, typically interactive shells.

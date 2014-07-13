@@ -1,0 +1,12 @@
+Package: pv
+Version: 1.5.2-1
+Depends: libc
+Source: /mnt/shared/openwrt-packages/utils/pv
+Section: utils
+Architecture: brcm47xx
+Installed-Size: 21896
+Description:  Pipe Viewer is a terminal-based tool for monitoring the progress of data
+ through a pipeline. It can be inserted into any normal pipeline between
+ two processes to give a visual indication of how quickly data is passing
+ through, how long it has taken, how near to completion it is, and an
+ estimate of how long it will be until completion.

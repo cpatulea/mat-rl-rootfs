@@ -1,0 +1,6 @@
+/lib/firmware/b43/b0g0bsinitvals5.fw
+/etc/modules.d/b43
+/lib/firmware/b43/ucode5.fw
+/lib/firmware/b43/pcm5.fw
+/lib/firmware/b43/b0g0initvals5.fw
+/lib/modules/3.10.36/b43.ko

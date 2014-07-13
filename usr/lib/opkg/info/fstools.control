@@ -1,0 +1,10 @@
+Package: fstools
+Version: 2014-06-02-d04e58946eff771bf59db90d7a2301b746141ac4
+Depends: libc, ubox
+Source: package/system/fstools
+License: GPLv2
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: brcm47xx
+Installed-Size: 16922
+Description:  OpenWrt filesystem tools

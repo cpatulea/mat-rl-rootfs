@@ -1,0 +1,8 @@
+Package: libpopt
+Version: 1.7-5
+Depends: libc
+Source: package/libs/popt
+Section: libs
+Architecture: brcm47xx
+Installed-Size: 13265
+Description:  A command line option parsing library

@@ -1,0 +1,8 @@
+Package: procps-watch
+Version: 3.2.8-1
+Depends: libc, procps
+Source: /mnt/shared/openwrt-packages/utils/procps
+Section: utils
+Architecture: brcm47xx
+Installed-Size: 4429
+Description:  Installs the applet watch.

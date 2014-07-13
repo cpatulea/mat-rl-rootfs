@@ -1,0 +1,10 @@
+Package: netifd
+Version: 2014-06-11-6e70adc5eca0dc1cc52a5838e86d937efdf8a38c
+Depends: libc, libuci, libnl-tiny, libubus, ubus, ubusd, jshn, libubox
+Source: package/network/config/netifd
+License: GPLv2
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: brcm47xx
+Installed-Size: 57129
+Description:  OpenWrt Network Interface Configuration Daemon

@@ -1,0 +1,9 @@
+Package: kmod-b43
+Version: 3.10.36+2014-05-22-1
+Depends: kernel (=3.10.36-1-112818f7ae05c0db047b10314e0e5b60), kmod-mac80211
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: brcm47xx
+Installed-Size: 88489
+Description:  Kernel module for Broadcom 43xx wireless support (mac80211 stack) new
