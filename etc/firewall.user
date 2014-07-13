@@ -5,3 +5,20 @@
 # Internal uci firewall chains are flushed and recreated on reload, so
 # put custom rules into the root chains e.g. INPUT or FORWARD or into the
 # special user chains, e.g. input_wan_rule or postrouting_lan_rule.
+
+# Be more explicit on why certain packets are rejected. Don't inject
+# TCP resets when a zone1 -> zone2 has a reject policy.
+
+echo 'rewriting reject chain' >&2
+iptables -I reject -j REJECT --reject-with icmp-admin-prohibited
+while iptables -D reject 2 2>/dev/null; do :; done
+
+echo 'adding portal rules' >&2
+ipset create known hash:ip hashsize 64 maxelem 256 timeout 600
+iptables -F forwarding_acces_rule
+iptables -A forwarding_acces_rule -p tcp -m tcp --dport 443 -j ACCEPT
+iptables -A forwarding_acces_rule -p udp -m udp --dport 53 -d 8.8.4.4 -j ACCEPT
+iptables -A forwarding_acces_rule -p udp -m udp --dport 53 -d 8.8.8.8 -j ACCEPT
+iptables -A forwarding_acces_rule -m set ! --match-set known src -j reject
+iptables -t nat -F prerouting_acces_rule
+iptables -t nat -A prerouting_acces_rule ! -d 192.168.3.0/24 -p tcp -m tcp --dport 80 -m set ! --match-set known src -j REDIRECT --to-ports 8080

@@ -3,7 +3,7 @@ config dnsmasq
 	option boguspriv	1
 	option filterwin2k	0  # enable for dial on demand
 	option localise_queries	1
-	option rebind_protection 1  # disable if upstream must serve RFC1918 addresses
+	option rebind_protection 0  # disable if upstream must serve RFC1918 addresses
 	option rebind_localhost 1  # enable for RBL checking and similar services
 	#list rebind_domain example.lan  # whitelist RFC1918 responses for domains
 	option local	'/lan/'
@@ -22,10 +22,19 @@ config dnsmasq
 
 config dhcp lan
 	option interface	lan
-	option start 	100
+	option start 	10
 	option limit	150
-	option leasetime	12h
+	option leasetime	1h
+	option force	1
 
 config dhcp wan
 	option interface	wan
 	option ignore	1
+
+config dhcp 'acces'
+	option limit '150'
+	option interface 'acces'
+	option start '10'
+	option leasetime '1h'
+	option force '1'
+	list dhcp_option '6,8.8.8.8,8.8.4.4'

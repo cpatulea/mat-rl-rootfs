@@ -57,7 +57,7 @@ start_instance()
 
 	local cfg="$1"
 	local realm="$(uci_get system.@system[0].hostname)"
-	local listen http https interpreter indexes path handler
+	local listen http https interpreter indexes path handler args
 
 	procd_open_instance
 	procd_set_param respawn
@@ -73,6 +73,14 @@ start_instance()
 			procd_append_param command "-L" "$handler"
 		}
 	}
+	config_get args "$cfg" args
+	append_params() {
+		while [ $# -ge 1 ]; do
+			procd_append_param command "$(eval echo "$1")"
+			shift
+		done
+	}
+	[ -n "$args" ] && append_params $args
 	[ -f /usr/lib/uhttpd_ubus.so ] && {
 		append_arg "$cfg" ubus_prefix "-u"
 		append_arg "$cfg" ubus_socket "-U"

@@ -1,0 +1,23 @@
+config wifi-device  radio0
+	option type     mac80211
+	option channel  1
+	option hwmode	11g
+	option path	'ssb0:0'
+	option htmode	
+	option country CA
+
+config wifi-iface
+	option device   radio0
+	option network  acces
+	option mode     ap
+	option ssid     '5A52C2.acces.reseaulibre.ca'
+	option encryption none
+
+config wifi-iface
+	option device   radio0
+	option network  relais
+	option mode     adhoc
+	option bssid '02:ca:ff:ee:ba:be'
+	option ssid     '5A52C2.relais.reseaulibre.ca'
+	option encryption none
+	option disabled 1
